@@ -1,0 +1,9 @@
+; ManagedAddinShim.def : Declares the module parameters.
+
+LIBRARY      "ManagedAddinShim.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE

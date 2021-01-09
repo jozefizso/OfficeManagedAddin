@@ -116,7 +116,6 @@ HRESULT __stdcall CConnectProxy::OnDisconnection(
         m_pConnect = NULL;
     }
 
-    // FIX: Bug discovered after release of 2.3.1.0.
     // Unload the AppDomain, and clean up.
     if (m_pCLRLoader)
     {

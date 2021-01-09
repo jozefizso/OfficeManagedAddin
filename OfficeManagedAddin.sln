@@ -1,11 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedAddin", "ManagedAddin\ManagedAddin.csproj", "{A8637DE8-73C4-473C-AFBC-89E21A641CD4}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OfficeManagedAddinSetup", "ManagedAddinSetup\OfficeManagedAddinSetup.vdproj", "{9A80E50A-5CCF-405A-B5D0-5A60177FE5FE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ManagedAddinShim", "ManagedAddinShim\ManagedAddinShim.vcproj", "{8F5C6F96-41BA-46DA-B5BB-8AD1C7E9D2C0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ManagedAddinShim", "ManagedAddinShim\ManagedAddinShim.vcxproj", "{8F5C6F96-41BA-46DA-B5BB-8AD1C7E9D2C0}"
 	ProjectSection(ProjectDependencies) = postProject
 		{97A41573-1809-43E1-9BB3-8943518A3067} = {97A41573-1809-43E1-9BB3-8943518A3067}
 		{97A41573-1809-43E1-9BB3-8943518A3067} = {97A41573-1809-43E1-9BB3-8943518A3067}

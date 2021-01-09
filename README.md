@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-Use **Visual Studio 2008** to edit the code.
+Use **Visual Studio 2010** to edit the code.
 
 
 ## License

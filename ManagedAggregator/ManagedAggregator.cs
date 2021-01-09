@@ -64,6 +64,12 @@ namespace ManagedHelpers
                 {
                     Marshal.Release(pInner);
                 }
+
+                // FIX: Bug discovered after release of 2.3.1.0.
+                // We call ReleaseComObject on the outer object (ConnectProxy)
+                // to make sure we delete the RCW, and prevent the CLR from
+                // holding onto it indefinitely (and keeping the host alive).
+                Marshal.ReleaseComObject(outerObject);
             }
         }
     }

@@ -115,6 +115,16 @@ HRESULT __stdcall CConnectProxy::OnDisconnection(
         m_pConnect->Release();
         m_pConnect = NULL;
     }
+
+    // FIX: Bug discovered after release of 2.3.1.0.
+    // Unload the AppDomain, and clean up.
+    if (m_pCLRLoader)
+    {
+        m_pCLRLoader->Unload();
+        delete m_pCLRLoader;
+        m_pCLRLoader = NULL;
+    }
+
     return hr;
 }
 
@@ -127,13 +137,6 @@ void CConnectProxy::FinalRelease()
     if (m_pUnknownInner)
     {
         m_pUnknownInner->Release();
-    }
-
-    // Unload the AppDomain, and clean up.
-    if (m_pCLRLoader)
-    {
-        m_pCLRLoader->Unload();
-        delete m_pCLRLoader;
-        m_pCLRLoader = NULL;
+        m_pUnknownInner = NULL;
     }
 }

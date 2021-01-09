@@ -1,0 +1,39 @@
+// ManagedAddinShim.idl 
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(DFB9E0E6-88F3-4BBB-861F-702EF2D27219),
+	version(1.0),
+	helpstring("ManagedAddinShim 1.0 Type Library")
+]
+library ManagedAddinShimLib
+{
+	importlib("stdole2.tlb");
+
+	[
+		uuid(833da94f-deb7-4e11-95c4-2fd4f447c784),
+		helpstring("ConnectProxy Class")
+	]
+	coclass ConnectProxy
+	{
+		[default] interface IUnknown;
+	};
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
